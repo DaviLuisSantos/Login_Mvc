@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Tá LOGADO meu parsero</h1>
+</div>
+
+@if (Session["nomeUsuarioLogado"] != null)
+{
+    <text>
+        <h3> BemVindo @Session["nomeUsuarioLogado"].ToString() </h3>
+    </text>
+}
